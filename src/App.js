@@ -1,5 +1,5 @@
 
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter , Route, Switch } from 'react-router-dom';
 import './App.css';
 import Clock_cl from './clock-cl';
 import Clock_fn from './clock-fn';
