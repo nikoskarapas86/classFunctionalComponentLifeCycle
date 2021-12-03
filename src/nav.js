@@ -7,6 +7,7 @@ export default function Navigate(){
         <nav>
             <button onClick={()=>navigate('/class') } >class Component</button>
             <button onClick={()=>navigate('/function') }>Function Component </button>
+            <button onClick={()=>navigate('/people') }>get people </button>
         </nav>
     )
 

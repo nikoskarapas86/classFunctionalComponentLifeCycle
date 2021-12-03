@@ -3,6 +3,7 @@ import "./App.css";
 import Clock_cl from "./clock-cl";
 import Clock_fn from "./clock-fn";
 import Navigation from "./nav";
+import PeopleList from "./PeopleList";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route exact path="/class" element={<Clock_cl/>} />
           <Route exact path="/function" element={<Clock_fn/>} />
+          <Route exact path="/people" element={<PeopleList/>} />
         </Routes>
       </BrowserRouter>
     </div>
