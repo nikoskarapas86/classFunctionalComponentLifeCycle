@@ -1,12 +1,14 @@
+import CardItem from "./Card"
+
 
 
 export default function PeopleList(){
-let peopleList =[{name:'kostas'},{name:'panos'},{name:"makis"}]
+let peopleList =[{id:'1',name:'kostas'},{id:'2',name:'panos'},{id:'3',name:"makis"}]
     return(
-<ol>
+<div>
     {
-        peopleList.map((person,index )=> <li key={index}>{person.name}</li> )
+        peopleList.map((person,index )=> <CardItem key={person.id} name={person.name}/> )
     }
-</ol>
+</div>
     )
 }

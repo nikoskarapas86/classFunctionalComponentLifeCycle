@@ -4,7 +4,7 @@ import Clock_cl from "./clock-cl";
 import Clock_fn from "./clock-fn";
 import Navigation from "./nav";
 import PeopleList from "./PeopleList";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div>
