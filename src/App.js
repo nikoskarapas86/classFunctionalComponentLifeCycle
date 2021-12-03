@@ -6,11 +6,15 @@ import Navigation from "./nav";
 import PeopleList from "./PeopleList";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
+//   <Route path='/topics' component={Topics}>
+//   <Route path='/topics/:topicId' component={Topic} />
+// </Route>
   return (
-    <div>
+    <div className="content">
       <BrowserRouter>
       <Navigation/>
         <Routes>
+           
           <Route exact path="/class" element={<Clock_cl/>} />
           <Route exact path="/function" element={<Clock_fn/>} />
           <Route exact path="/people" element={<PeopleList/>} />
