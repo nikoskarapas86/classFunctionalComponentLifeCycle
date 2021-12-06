@@ -10,7 +10,7 @@ export default function Home() {
         <Button name="mybtn" onClick={(e) => {
           console.log(e.target.name)
           navigate("/personList/persons")}}>List </Button>
-        <Button>Delete</Button>
+        <Button onClick={()=> navigate("/personList/remove")}>Delete</Button>
       </nav>
       <Outlet />
     </>

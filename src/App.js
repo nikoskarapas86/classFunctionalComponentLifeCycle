@@ -9,6 +9,7 @@ import ComponentPropTypes from "./ComponentPropTypes";
 import Home from "./Home";
 import PersonList from "./PersonList";
 import CreatePerson from "./createPerson";
+import PersonRemove from "./PersonRemove";
 function App() {
 //   <Route path='/topics' component={Topics}>
 //   <Route path='/topics/:topicId' component={Topic} />
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/personList" element={<Home/>} >
              <Route path="persons" element={<PersonList/>}/>
              <Route path="add" element={<CreatePerson/>}/>
+             <Route path="remove" element={<PersonRemove/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
