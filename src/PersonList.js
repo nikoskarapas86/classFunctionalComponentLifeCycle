@@ -1,7 +1,23 @@
+import axios from "axios";
 import { Component } from "react";
 
 export default class PersonList extends Component {
+    state={
+        persons:[]
+    }
+    componentDidMount(){
+       axios.get(`https://jsonplaceholder.typicode.com/users`).then(res => {
+           const persons =res.data;
+       this.setState({persons})
+        
+        });
+       
+    }
   render() {
-    return <div>listofpersons</div>;
+    return <ul>
+        {
+            this.state.persons.map(item => <li key={item.id}>{item.name}</li>)
+        }
+    </ul>
   }
 }

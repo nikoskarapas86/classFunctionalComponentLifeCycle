@@ -19,8 +19,8 @@ function App() {
       <Navigation/>
         <Routes>
            
-          <Route exact path="/class" element={<Clock_cl/>} />
-          <Route exact path="/function" element={<Clock_fn/>} />
+          {/* <Route exact path="/class" element={<Clock_cl/>} />
+          <Route exact path="/function" element={<Clock_fn/>} /> */}
           <Route exact path="/people" element={<PeopleList/>} />
           <Route exact path="/personList" element={<Home/>} >
              <Route path="persons" element={<PersonList/>}/>
