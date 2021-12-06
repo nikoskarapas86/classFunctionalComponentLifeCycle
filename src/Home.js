@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <nav>
-        <Button>create</Button>
+        <Button onClick={()=> navigate("/personList/add")}>create</Button>
         <Button name="mybtn" onClick={(e) => {
           console.log(e.target.name)
           navigate("/personList/persons")}}>List </Button>
